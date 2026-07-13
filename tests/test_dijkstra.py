@@ -10,8 +10,6 @@ def test_dijkstra_simple_graph_1():
         "E": [("C", 7)]
     }
 
-    source_node = "A"
-
     distances = dijkstra(graph, "A")
 
     assert distances["A"] == 0
