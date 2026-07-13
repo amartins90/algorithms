@@ -27,15 +27,3 @@ def dijkstra(graph, source_node):
             visited.add(current_node)
 
     return distances
-
-graph = {
-    "A": [("B", 4), ("C", 2)],
-    "B": [("A", 4), ("D", 5)],
-    "C": [("A", 2), ("D", 1), ("E", 7)],
-    "D": [("B", 5), ("C", 1)],
-    "E": [("C", 7)]
-}
-
-source_node = "A"
-
-print(dijkstra(graph, source_node))
